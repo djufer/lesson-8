@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form Event</title>
+        <link rel="stylesheet" href="./style.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        />
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1>Create your account</h1>
+            </header>
+            <form action="" name="form" id="form">
+                <h3>First Name</h3>
+                <input
+                    type="text"
+                    name="firstName"
+                    placeholder="Enter your first name.."
+                    required
+                />
+                <h3>Second Name</h3>
+                <input
+                    type="text"
+                    name="lastName"
+                    placeholder="Enter your last name.."
+                    required
+                />
+                <h3>Email Address</h3>
+                <input
+                    type="text"
+                    name="email"
+                    placeholder="Enter email..."
+                    required
+                />
+
+                <div id="gender">
+                    <input
+                        type="radio"
+                        name="man"
+                        id="man"
+                        value="man"
+                        checked
+                    />
+                    <label for="man">Man</label>
+                    <input type="radio" name="man" id="woman" value="woman" />
+                    <label for="woman">Woman</label>
+                </div>
+
+                <h3>Position</h3>
+
+                <label for="position" class="label-of-select">
+                    <select name="position" id="position">
+                        <option selected>Frontend</option>
+                        <option>Backend</option>
+                        <option>QC/QA</option>
+                    </select>
+                </label>
+
+                <input type="checkbox" name="agree" id="agree" />
+                <label for="agree"
+                    >I agree all statements in Terms of service</label
+                >
+
+                <button type="button" name="submit" class="submit">
+                    Sign up
+                </button>
+            </form>
+            <!---------------------------------------------------->
+        </div>
+        <div class="container2">
+            <header class="header2">
+                <div class="avatar"></div>
+            </header>
+            <h1 class="fullName"></h1>
+            <p id="email"></p>
+            <h3 class="positionRes"></h3>
+            <div class="sign-out-section">
+                <button id="sign-out">Sign out</button>
+            </div>
+
+            <footer class="footer2">
+                <div class="icons">
+                    <div class="icon facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="icon twitter">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="icon youtube">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
